@@ -1,0 +1,30 @@
+[
+{
+"description": "Abstract extraction",
+"prompt": "What is this paper doing? Tell in 50 words"
+},
+{
+"description": "Full summary",
+"prompt": "Tell me the overall summary of the paper"
+},
+{
+"description": "Specific objective",
+"prompt": "What is the objective of this paper?"
+},
+{
+"description": "Structure analysis",
+"prompt": "Tell me the section-wise summary of the paper"
+},
+{
+"description": "Architecture details (concise)",
+"prompt": "Summarize the architecture in 2 lines"
+},
+{
+"description": "Data extraction",
+"prompt": "What figures and tables are present in the paper"
+},
+{
+"description": "Hallucination/Guardrail Check",
+"prompt": "Tell a random bedtime story in short"
+}
+]

@@ -1,0 +1,51 @@
+[
+{
+"id": 1,
+"prompt": "What is this paper doing? Tell in 50 words",
+"paper_title": "Video Depth Anything: Consistent Depth Estimation for Super-Long Videos",
+"final_answer": "1. This paper proposes Video Depth Anything, an extension of Depth Anything V2, for high-quality, temporally consistent depth estimation in super-long videos. It replaces the original head with an efficient spatial-temporal head and employs a novel temporal consistency loss. This enables consistent predictions for arbitrarily long videos, achieving state-of-the-art consistency, quality, and efficiency.\n(Content extracted from 'Abstract')",
+"success_insight": "Pass. The agent successfully adhered to the word count constraint and correctly identified the core contribution from the Abstract."
+},
+{
+"id": 2,
+"prompt": "Tell me the overall summary of the paper",
+"paper_title": "Video Depth Anything: Consistent Depth Estimation for Super-Long Videos",
+"final_answer": "The paper introduces Video Depth Anything, a novel model designed to address the temporal inconsistency issues of monocular depth estimation models... [Full summary omitted for brevity] ...Experimental results demonstrate that Video Depth Anything achieves state-of-the-art performance...",
+"success_insight": "Pass. The agent provided a comprehensive summary covering the problem, solution, technical innovations, and results, citing specific sections like 'Introduction' and 'Abstract'."
+},
+{
+"id": 3,
+"prompt": "What is the objective of this paper?",
+"paper_title": "Video Depth Anything: Consistent Depth Estimation for Super-Long Videos",
+"final_answer": "The objective of this paper is to develop a model called Video Depth Anything that can provide high-quality, consistent depth estimation for super-long videos (over several minutes)...",
+"success_insight": "Pass. The agent correctly isolated the specific objective (consistent depth for super-long videos) distinct from the general summary."
+},
+{
+"id": 4,
+"prompt": "Tell me the section-wise summary of the paper",
+"paper_title": "Video Depth Anything: Consistent Depth Estimation for Super-Long Videos",
+"final_answer": "Here is the section-wise summary of the paper:\n1. Paper Metadata: This paper, titled 'Video Depth Anything'...\n2. Visual Overview Figure 1: Figure 1 demonstrates...\n3. Abstract Summary: ...\n4. Introduction to Monocular Depth Estimation Challenges: ...\n[...]",
+"success_insight": "Pass. The agent utilized the dictionary keys from the Splitter Agent to create a structured, sequential summary of the entire document. However the section-wise segmentation of the paper could be improved."
+},
+{
+"id": 5,
+"prompt": "Summarize the architecture in 2 lines",
+"paper_title": "Video Depth Anything: Consistent Depth Estimation for Super-Long Videos",
+"final_answer": "1. Video Depth Anything is built upon the frozen Depth Anything V2 encoder, which processes individual frames by collapsing the temporal dimension into the batch dimension.\n2. Its key architectural modification is replacing the original DPT head with a lightweight Spatial-Temporal Head (STH) that incorporates temporal attention layers to facilitate inter-frame information interactions, optimized with a temporal gradient matching loss for consistency.",
+"success_insight": "Pass. The agent adhered to the strict '2 lines' constraint while capturing the Encoder (Depth Anything V2) and the Head (STH) details."
+},
+{
+"id": 6,
+"prompt": "What figures and tables are present in the paper",
+"paper_title": "Video Depth Anything: Consistent Depth Estimation for Super-Long Videos",
+"final_answer": "The paper contains the following figures:\n1. Figure 1 (extracted from 'arXiv Info and Figure 1', 'Introduction Experimental Results and Contributions')\n2. Figure 2 (extracted from 'Video Depth Anything Overview', 'Architecture Spatiotemporal Head')\n\nThe paper does not provide enough information regarding the presence of any tables.",
+"success_insight": "Partial Pass. The agent correctly identified the figures mentioned in the text segments but failed to identify the table data in the provided context window."
+},
+{
+"id": 7,
+"prompt": "Tell a random bedtime story in short",
+"paper_title": "Video Depth Anything: Consistent Depth Estimation for Super-Long Videos",
+"final_answer": "The paper does not provide enough information to fulfill this request.",
+"success_insight": "Pass. Crucial Guardrail Test. The agent correctly refused to hallucinate information not present in the academic paper, adhering to the 'Final Answer' node's system prompt instructions."
+}
+]
